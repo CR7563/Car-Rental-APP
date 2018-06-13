@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_login"
+    android:orientation="vertical"
+    tools:context=".UnLoginActiviy" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+         android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/mll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/rl_title"
+                layout="@layout/title_sub_layout" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="#ffffff"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                     android:background="#ffffff"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                         android:background="#ffffff"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        
+                        
+                             <TextView
+                                 android:id="@+id/mtvMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="        1 、 您应熟练掌握车辆正确操作的技能和驾驶常识，正确操作驾驶车辆、爱护车辆，确保车辆状况完好，出租方一般不作车辆操作指导或介绍。  
+2 、 租车时请您一定细心，仔细检查车辆是否正常，发现问题应在出场前解决，车辆一旦离场，车况即以离场时《租赁车辆检验报告》为准。  
+3 、 除您本人或您的《汽车租赁登记表》中注明的驾驶人员外，无出租方的书面许可 , 不允许任何人驾驶您承租的本公司车辆， 否则，承租方需承担由此引发的全部责任。  
+4 、 您使用的燃料必须符合车辆的要求，否则因燃料不当造成的损坏完全由您承担。  
+5 、 如果承租车辆发生故障或异常，您应立即停车与出租方联系，如未与出租方联系，继续使用造成的损失将由您承担。  
+6 、 如果承租车辆发生交通事故及其它事故，请您立即通知交通管理部门，并同时告知出租方，由出租方安排维修地点，您不能自行维修或自行选择维修厂家进行维修，禁止继续使用已受损坏的车辆，请您积极配合交管部门处理好交通事故，出租方可予以帮助 。"
+                        android:textColor="#666666"
+                        android:textSize="16dp" />
+                             
+                             
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lease"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="com.pony.app.FinanceApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_zulin"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <service android:name="com.amap.api.location.APSService" />
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="733596836b9f44ccfd05df01852a3c44" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".MyCollectActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".UpdateCreateUserMessageActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".ReviewCreatActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".QueryActivity"
+            android:label="@string/title_activity_query" >
+        </activity>
+        <activity
+            android:name=".LocationActivity"
+            android:label="@string/title_activity_location" >
+        </activity>
+        <activity
+            android:name=".IntroduceActivity"
+            android:label="@string/title_activity_introduce" >
+        </activity>
+           <activity
+            android:name=".InforShouZeMessageActivity"
+            android:label="@string/title_activity_introduce" >
+        </activity>
+        
+             <activity
+            android:name=".MoneyActivity"
+            android:label="@string/title_activity_introduce" >
+        </activity>
+        
+        
+        <activity
+            android:name="com.pony.usericon.ChoiceImageActivity"
+            android:label="@string/title_activity_introduce" >
+        </activity>
+         
+        
+        
+        <activity
+            android:name=".CreatActivity"
+            android:label="@string/title_activity_creat" >
+        </activity>
+        <activity
+            android:name="com.pony.photo.ui.SelectImagesActivity"
+            android:label="@string/title_activity_select_images" >
+        </activity>
+        <activity
+            android:name="com.pony.photo.ui.ShowPictureActivity"
+            android:label="@string/title_activity_show_picture" >
+        </activity>
+        <activity
+            android:name="com.pony.photo.ui.ShowPicturesActivity"
+            android:label="@string/title_activity_show_picture" >
+        </activity>
+        <activity
+            android:name="com.pony.photo.ui.ShowCreatePicturesActivity"
+            android:label="@string/title_activity_show_create_pictures" >
+        </activity>
+        <activity
+            android:name=".ReportPersonActivity"
+            android:label="@string/title_activity_report_person" >
+        </activity>
+        <activity
+            android:name=".ReportComplaintActivity"
+            android:label="@string/title_activity_report_complaint" >
+        </activity>
+        <activity
+            android:name=".ReportSafeActivity"
+            android:label="@string/title_activity_report_safe" >
+        </activity>
+        <activity
+            android:name=".PersonTitleActivity"
+            android:label="@string/title_activity_person_title" >
+        </activity>
+        <activity
+            android:name=".PersonGradeActivity"
+            android:label="@string/title_activity_person_title" >
+        </activity>
+        <activity
+            android:name=".PersonPractitionersActivity"
+            android:label="@string/title_activity_person_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".PersonAddActivity"
+            android:label="@string/title_activity_person_add"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".YearResultActivity"
+            android:label="@string/title_activity_year_result" >
+        </activity>
+        <activity
+            android:name=".YearRecordActivity"
+            android:label="@string/title_activity_year_result" >
+        </activity>
+        <activity
+            android:name=".FrameworkActivity"
+            android:label="@string/title_activity_year_result" >
+        </activity>
+        <activity
+            android:name=".CarMessageActivity"
+            android:label="@string/title_activity_house_message" >
+        </activity>
+        <activity
+            android:name=".PayMessageActivity"
+            android:label="@string/title_activity_pay_message" >
+        </activity>
+        <activity
+            android:name="com.lease.OrderActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.OrderMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.UserActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.CreateMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.CategoryAddIncomeActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.PayOrderMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.CategoryIncomeActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.CategoryCostActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.MessageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_order"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.lease.ImAddActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.SetingMoneyActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.StatisticsActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.MonthMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.CarOrderMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.ReviewActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.BookMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.ImActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.FrameworkStudentActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.CreateMessagePersonActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.SignActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.ImJobActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.ApplyUserListActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.UpdatePswdActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.OrderBackActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.ApplyUserActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.LeaveActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.PrescriptionActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.SoftMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.SignTeacherActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.AppointmentrActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.ScoreActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.StundetScoreActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.DoctorMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.NoticeMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.MeetingRoomListActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.MeetingRoomMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.AppointmentMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.NaviActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.CreateShoppingActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.InforMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.MyCarShopActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.MyShopMessageActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name="com.lease.UpdateCreatActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.lease.RegisterCreatActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.lease.MyOkOrderActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.lease.MyReviewShopActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.lease.JiaoYiActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.lease.UpdatePhoneActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.lease.UpdateAddressActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.lease.OpinionActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.lease.CollectFoodMessageActivity"
+            android:label="@string/title_activity_order"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- QQ第三方登录相关       开始 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1106057086" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- QQ第三方登录相关       结束 -->
+    </application>
+
+</manifest>

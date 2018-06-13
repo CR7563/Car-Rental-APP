@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_login"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal" >
+
+            
+            <CheckBox
+                    android:id="@+id/mllType"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="类型 "
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1sp"
+            android:layout_height="20dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal" >
+
+            
+                        <CheckBox
+                    android:id="@+id/mllMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="价格 "
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1sp"
+            android:layout_height="20dp"
+            android:background="#cccccc" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal" >
+
+                        <CheckBox
+                    android:id="@+id/mllReview"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:button="@null"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="租用次数 "
+                    android:textColor="#333333"
+                    android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" >
+
+        <ListView
+            android:id="@+id/mListMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:divider="@color/bg_color_login"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/listview"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/mllNomessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/no_message" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="暂无信息"
+                android:textColor="#bfbfbf" />
+        </LinearLayout>
+        
+        
+          <ListView
+                android:id="@+id/mListChoiceMessage"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#30000000"
+                android:divider="@color/bg_color_login"
+                android:dividerHeight="1dp"
+                android:visibility="gone"
+                android:listSelector="@drawable/listview"
+                android:scrollbars="none" />
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/mMapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </com.amap.api.maps.MapView>
+
+</LinearLayout>

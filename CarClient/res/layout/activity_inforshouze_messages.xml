@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_login"
+    android:orientation="vertical"
+    tools:context=".UnLoginActiviy" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+         android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/mll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:id="@+id/rl_title"
+                layout="@layout/title_sub_layout" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:background="#ffffff"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                     android:background="#ffffff"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp"
+                         android:background="#ffffff"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        
+                        
+                             <TextView
+                                 android:id="@+id/mtvMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:lineSpacingExtra="5dp"
+                        android:text="        1、加强车辆驾驶、保养及交通法规知识的学习，熟悉并掌握广东交通线路，努力提高业 务素质和岗位技能。 \n2、必须具备熟练的驾驶技能，保持良好的精神状态，在行驶途中能够准确判断车况路况， 及时发现问题，解决在萌芽状态，消除事故隐患。  \n 3、遵章驾驶，严禁酒后驾车、疲劳驾车。工作期间，司机一律不准饮酒，确保行车安全。 \n4、服从领导，听从指挥，不擅离职守、不脱岗，保证公司用车需要。 5、爱护车辆，注意节约，及时保养，保持车辆整洁。\n6、与领导或客户出行，要有上下级和服务意识，主动为领导或客人开关车门。要灵活勤 快，乐意助人，提高公司对外服务形象。"
+                        android:textColor="#666666"
+                        android:textSize="16dp" />
+                             
+                             
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
